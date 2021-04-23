@@ -17,7 +17,6 @@ public class BallController : MonoBehaviour
     //ゲームスコアを格納する変数
     private int game_socre = 0;
 
-
     private void OnCollisionEnter(Collision collision)
     {
         //衝突したオブジェクトが星か雲だった場合に点数を加算
@@ -44,6 +43,10 @@ public class BallController : MonoBehaviour
 
     }
 
+
+
+
+
     // Use this for initialization
     void Start()
     {
@@ -53,6 +56,8 @@ public class BallController : MonoBehaviour
 
         //ScoreTextにゲームスコアを表示
         this.scoreText.GetComponent<Text>().text = "SCORE : " + game_socre;
+
+
 
     }
 
